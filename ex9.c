@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 	printf("name each: %c %c %c %c\n", name[0], name[1], name[2], name[3]);
 	printf("name : %s\n", name);
 
-	numbers[0] = 1;
+	numbers[0] = 'a';
 	numbers[1] = 2;
 	numbers[2] = 3;
 	numbers[3] = 4;
@@ -27,6 +27,9 @@ int main(int argc, char *argv[])
 	printf("another: %s\n", another);
 
 	printf("another each : %c %c %c %c\n", another[0], another[1], another[2], another[3]);
-
+        // try to break it
+        // get rid of the initializers that setup name -> print messy code when name each and name
+        // accidentally set name[3] 'A'; so that there's no terminator -> print messy code when %s, name
+        // set the initialier to {'a', 'a', 'a', 'a'} so there is no space for terminator -> print messy code when %s, name
 	return 0;
 }	
