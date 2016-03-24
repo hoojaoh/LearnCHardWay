@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 
+  int i = 0;
 
 	for(i = 0; i < argc; i++){
 		printf("arg %d : %s \n", i, argv[i]);
@@ -17,5 +17,12 @@ int main(int argc, char *argv[])
 		printf("state %d: %s\n", i, states[i]);
 	}
         printf("another argv: %s\n", argv[1]);
+
+        char *arg[] = {"ABC", "DEF", "OPQ"};
+        printf("%s\t%s\t%s\n", arg[0], arg[1], arg[2]);
+        printf("%d\n", *arg[0]);
+        printf("%c\t%c\t%c\n", *arg[0], *arg[1], *arg[2]);
+        printf("%d\t%d\t%d\n", arg[0][1], arg[1][2], arg[2][0]);
+        //        printf("%d\t%d\t%d\n", *arg[0][1], *arg[1][2], *arg[2][0]); // error
 	return 0;
 }

@@ -10,6 +10,7 @@ clean:
 	rm 	-f	ex9
 	rm 	-f 	ex10
 	rm 	-f	ex13
+	rm 	-f	ex14
 all:
 	make ex1
 	make ex3
@@ -30,3 +31,5 @@ ex10:
 	gcc -o ex10 -Wall ex10.c
 ex13:
 	gcc -o ex13 -Wall ex13.c
+ex14:
+	gcc -o ex14 -Wall ex14.c
